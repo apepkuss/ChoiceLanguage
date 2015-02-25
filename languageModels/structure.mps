@@ -47,7 +47,7 @@
     <property role="34LRSv" value="choice" />
     <ref role="1TJDcQ" node="5pRdpDY17Tb" resolve="Variational" />
     <node concept="1TJgyi" id="5pRdpDY18an" role="1TKVEl">
-      <property role="TrG5h" value="demension" />
+      <property role="TrG5h" value="dimension" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
     <node concept="1TJgyj" id="5pRdpDY18a5" role="1TKVEi">
@@ -67,11 +67,9 @@
     <property role="TrG5h" value="Constant" />
     <property role="34LRSv" value="constant" />
     <ref role="1TJDcQ" node="5pRdpDY17Tb" resolve="Variational" />
-    <node concept="1TJgyj" id="5pRdpDY1sSg" role="1TKVEi">
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="value" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" to="tpee:f_0OyhT" resolve="IntegerType" />
+    <node concept="1TJgyi" id="19xz3ogbvxx" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

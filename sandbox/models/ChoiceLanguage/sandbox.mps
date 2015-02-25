@@ -24,7 +24,6 @@
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -54,7 +53,7 @@
     </language>
     <language id="a92e5bf9-eea8-4a4c-9984-8f946109148d" name="ChoiceLanguage">
       <concept id="6230507547145830026" name="ChoiceLanguage.structure.Constant" flags="ng" index="CsOGg">
-        <child id="6230507547145915920" name="value" index="CsJIa" />
+        <property id="1324493929251207265" name="value" index="2j7hn" />
       </concept>
       <concept id="6230507547145830023" name="ChoiceLanguage.structure.Choice" flags="ng" index="CsOGt">
         <child id="6230507547145831055" name="alt2" index="CsVsl" />
@@ -81,16 +80,21 @@
             <node concept="10Oyi0" id="19xz3oga$oP" role="1tU5fm" />
             <node concept="3cpWs3" id="19xz3ogaWx8" role="33vP2m">
               <node concept="CsOGt" id="19xz3ogaY3s" role="3uHU7w">
-                <node concept="CsOGt" id="19xz3ogaY44" role="CsVsv">
-                  <node concept="CsOGg" id="19xz3ogaY4U" role="CsVsv">
-                    <node concept="10Oyi0" id="19xz3ogaY4W" role="CsJIa" />
+                <node concept="CsOGt" id="19xz3ogbGUs" role="CsVsl">
+                  <node concept="CsOGg" id="19xz3ogbGUW" role="CsVsv">
+                    <property role="2j7hn" value="5" />
                   </node>
-                  <node concept="CsOGg" id="19xz3ogaY52" role="CsVsl">
-                    <node concept="10Oyi0" id="19xz3ogaY54" role="CsJIa" />
+                  <node concept="CsOGg" id="19xz3ogbGV0" role="CsVsl">
+                    <property role="2j7hn" value="6" />
                   </node>
                 </node>
-                <node concept="CsOGg" id="19xz3ogaY5a" role="CsVsl">
-                  <node concept="10Oyi0" id="19xz3ogaY5c" role="CsJIa" />
+                <node concept="CsOGt" id="19xz3ogbvm0" role="CsVsv">
+                  <node concept="CsOGg" id="19xz3ogbww9" role="CsVsv">
+                    <property role="2j7hn" value="10" />
+                  </node>
+                  <node concept="CsOGg" id="19xz3ogbBMX" role="CsVsl">
+                    <property role="2j7hn" value="4" />
+                  </node>
                 </node>
               </node>
               <node concept="3cmrfG" id="19xz3oga$pP" role="3uHU7B">
@@ -99,7 +103,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="19xz3ogb3Jc" role="3cqZAp" />
       </node>
       <node concept="3Tm1VV" id="19xz3oga$nF" role="1B3o_S" />
       <node concept="3cqZAl" id="19xz3oga$nX" role="3clF45" />
