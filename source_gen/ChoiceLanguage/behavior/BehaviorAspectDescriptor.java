@@ -11,13 +11,17 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
   }
   public BehaviorDescriptor getDescriptor(String fqName) {
     switch (Arrays.binarySearch(stringSwitchCases_846f5o_a0a0b, fqName)) {
-      case 0:
-        return new Choice_BehaviorDescriptor();
       case 1:
+        return new Choice_BehaviorDescriptor();
+      case 2:
         return new Constant_BehaviorDescriptor();
+      case 3:
+        return new Select_BehaviorDescriptor();
+      case 0:
+        return new Alternative_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"ChoiceLanguage.structure.Choice", "ChoiceLanguage.structure.Constant"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"ChoiceLanguage.structure.Alternative", "ChoiceLanguage.structure.Choice", "ChoiceLanguage.structure.Constant", "ChoiceLanguage.structure.Select"};
 }

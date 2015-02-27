@@ -17,8 +17,12 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
+        <reference id="1169127628841" name="intfc" index="PrY4T" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
+        <child id="1169129564478" name="implements" index="PzmwI" />
       </concept>
       <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
         <reference id="1082985295845" name="dataType" index="AX2Wp" />
@@ -46,10 +50,6 @@
     <property role="TrG5h" value="Choice" />
     <property role="34LRSv" value="choice" />
     <ref role="1TJDcQ" node="5pRdpDY17Tb" resolve="Variational" />
-    <node concept="1TJgyi" id="5pRdpDY18an" role="1TKVEl">
-      <property role="TrG5h" value="dimension" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
     <node concept="1TJgyj" id="5pRdpDY18a5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="alt1" />
@@ -62,6 +62,9 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5pRdpDY17Tb" resolve="Variational" />
     </node>
+    <node concept="PrWs8" id="19xz3ogbXlK" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5pRdpDY17Ua">
     <property role="TrG5h" value="Constant" />
@@ -70,6 +73,29 @@
     <node concept="1TJgyi" id="19xz3ogbvxx" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="19xz3ogbL$u">
+    <property role="TrG5h" value="Select" />
+    <property role="34LRSv" value="select" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="1TJgyi" id="19xz3ogbUda" role="1TKVEl">
+      <property role="TrG5h" value="DimName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="19xz3ogbUdc" role="1TKVEl">
+      <property role="TrG5h" value="WhichAlt" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="19xz3ogbL_p">
+    <property role="TrG5h" value="Alternative" />
+    <ref role="1TJDcQ" node="5pRdpDY17Tb" resolve="Variational" />
+    <node concept="1TJgyj" id="19xz3ogbLBe" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="value" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5pRdpDY17Tb" resolve="Variational" />
     </node>
   </node>
 </model>

@@ -6,6 +6,7 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4468" ref="r:a403320e-50ad-4dec-bb01-43318f5f84f3(ChoiceLanguage.structure)" implicit="true" />
   </imports>
   <registry>
@@ -43,8 +44,8 @@
   <node concept="24kQdi" id="19xz3og8Y7l">
     <ref role="1XX52x" to="4468:5pRdpDY17U7" resolve="Choice" />
     <node concept="3EZMnI" id="19xz3og9ecV" role="2wV5jI">
-      <node concept="3F0ifn" id="19xz3og9ed5" role="3EZMnx">
-        <property role="3F0ifm" value="Choice" />
+      <node concept="3F0A7n" id="19xz3ogbKCo" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="19xz3og9ede" role="3EZMnx">
         <property role="3F0ifm" value="&lt;" />
@@ -75,6 +76,39 @@
       <node concept="3F0A7n" id="19xz3ogbvxF" role="3EZMnx">
         <ref role="1NtTu8" to="4468:19xz3ogbvxx" resolve="value" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="19xz3ogbN8K">
+    <ref role="1XX52x" to="4468:19xz3ogbL_p" resolve="Alternative" />
+    <node concept="3EZMnI" id="19xz3ogbN8M" role="2wV5jI">
+      <node concept="3F1sOY" id="19xz3ogbN8T" role="3EZMnx">
+        <ref role="1NtTu8" to="4468:19xz3ogbLBe" />
+      </node>
+      <node concept="l2Vlx" id="19xz3ogbN8P" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="19xz3ogbPHt">
+    <ref role="1XX52x" to="4468:19xz3ogbL$u" resolve="Select" />
+    <node concept="3EZMnI" id="19xz3ogbYTV" role="2wV5jI">
+      <node concept="3F0ifn" id="19xz3ogc0hO" role="3EZMnx">
+        <property role="3F0ifm" value="select" />
+      </node>
+      <node concept="3F0A7n" id="19xz3ogbYVP" role="3EZMnx">
+        <ref role="1NtTu8" to="4468:19xz3ogbUda" resolve="DimName" />
+      </node>
+      <node concept="3F0ifn" id="19xz3ogc1DK" role="3EZMnx">
+        <property role="3F0ifm" value="." />
+        <node concept="11L4FC" id="19xz3ogc39Z" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="19xz3ogc3aV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="19xz3ogc1Ea" role="3EZMnx">
+        <ref role="1NtTu8" to="4468:19xz3ogbUdc" resolve="WhichAlt" />
+      </node>
+      <node concept="l2Vlx" id="19xz3ogbYTW" role="2iSdaV" />
     </node>
   </node>
 </model>

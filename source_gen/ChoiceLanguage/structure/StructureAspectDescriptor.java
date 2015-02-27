@@ -12,28 +12,34 @@ import org.jetbrains.annotations.Nullable;
 
 public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
-  /*package*/ final ConceptDescriptor myConceptChoice = new ConceptDescriptorBuilder("ChoiceLanguage.structure.Choice", MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e87L)).super_("ChoiceLanguage.structure.Variational").super_(MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL)).parents("ChoiceLanguage.structure.Variational").parentIds(MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(6230507547145831063L, "dimension")).properties("dimension").childDescriptors(new ConceptDescriptorBuilder.Link(6230507547145831045L, "alt1", MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL), false, false, false), new ConceptDescriptorBuilder.Link(6230507547145831055L, "alt2", MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL), false, false, false)).children(new String[]{"alt1", "alt2"}, new boolean[]{false, false}).alias("choice", "").create();
+  /*package*/ final ConceptDescriptor myConceptAlternative = new ConceptDescriptorBuilder("ChoiceLanguage.structure.Alternative", MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x12618c36102f1959L)).super_("ChoiceLanguage.structure.Variational").super_(MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL)).parents("ChoiceLanguage.structure.Variational").parentIds(MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL)).childDescriptors(new ConceptDescriptorBuilder.Link(1324493929251281358L, "value", MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL), false, false, false)).children(new String[]{"value"}, new boolean[]{false}).create();
+  /*package*/ final ConceptDescriptor myConceptChoice = new ConceptDescriptorBuilder("ChoiceLanguage.structure.Choice", MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e87L)).super_("ChoiceLanguage.structure.Variational").super_(MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL)).parents("ChoiceLanguage.structure.Variational", "jetbrains.mps.lang.core.structure.INamedConcept").parentIds(MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL), MetaIdFactory.conceptId(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L)).childDescriptors(new ConceptDescriptorBuilder.Link(6230507547145831045L, "alt1", MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL), false, false, false), new ConceptDescriptorBuilder.Link(6230507547145831055L, "alt2", MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL), false, false, false)).children(new String[]{"alt1", "alt2"}, new boolean[]{false, false}).alias("choice", "").create();
   /*package*/ final ConceptDescriptor myConceptConstant = new ConceptDescriptorBuilder("ChoiceLanguage.structure.Constant", MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e8aL)).super_("ChoiceLanguage.structure.Variational").super_(MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL)).parents("ChoiceLanguage.structure.Variational").parentIds(MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(1324493929251207265L, "value")).properties("value").alias("constant", "").create();
+  /*package*/ final ConceptDescriptor myConceptSelect = new ConceptDescriptorBuilder("ChoiceLanguage.structure.Select", MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x12618c36102f191eL)).super_("jetbrains.mps.baseLanguage.structure.Statement").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b215L)).parents("jetbrains.mps.baseLanguage.structure.Statement").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8cc56b215L)).propertyDescriptors(new ConceptDescriptorBuilder.Prop(1324493929251316554L, "DimName"), new ConceptDescriptorBuilder.Prop(1324493929251316556L, "WhichAlt")).properties("DimName", "WhichAlt").alias("select", "").create();
   /*package*/ final ConceptDescriptor myConceptVariational = new ConceptDescriptorBuilder("ChoiceLanguage.structure.Variational", MetaIdFactory.conceptId(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e4bL)).super_("jetbrains.mps.baseLanguage.structure.Expression").super_(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).parents("jetbrains.mps.baseLanguage.structure.Expression").parentIds(MetaIdFactory.conceptId(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL)).abstract_().alias("variational", "").create();
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptChoice, myConceptConstant, myConceptVariational);
+    return Arrays.asList(myConceptAlternative, myConceptChoice, myConceptConstant, myConceptSelect, myConceptVariational);
   }
 
   @Override
   @Nullable
   public ConceptDescriptor getDescriptor(String conceptFqName) {
-    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0h, conceptFqName)) {
+    switch (Arrays.binarySearch(stringSwitchCases_1htk8d_a0a0j, conceptFqName)) {
       case 0:
-        return myConceptChoice;
+        return myConceptAlternative;
       case 1:
-        return myConceptConstant;
+        return myConceptChoice;
       case 2:
+        return myConceptConstant;
+      case 3:
+        return myConceptSelect;
+      case 4:
         return myConceptVariational;
       default:
         return null;
     }
   }
-  private static String[] stringSwitchCases_1htk8d_a0a0h = new String[]{"ChoiceLanguage.structure.Choice", "ChoiceLanguage.structure.Constant", "ChoiceLanguage.structure.Variational"};
+  private static String[] stringSwitchCases_1htk8d_a0a0j = new String[]{"ChoiceLanguage.structure.Alternative", "ChoiceLanguage.structure.Choice", "ChoiceLanguage.structure.Constant", "ChoiceLanguage.structure.Select", "ChoiceLanguage.structure.Variational"};
 }

@@ -57,10 +57,15 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="a92e5bf9-eea8-4a4c-9984-8f946109148d" name="ChoiceLanguage">
+      <concept id="1324493929251281182" name="ChoiceLanguage.structure.Select" flags="ng" index="2jDkC">
+        <property id="1324493929251316556" name="WhichAlt" index="2jyXU" />
+        <property id="1324493929251316554" name="DimName" index="2jyXW" />
+      </concept>
       <concept id="6230507547145830026" name="ChoiceLanguage.structure.Constant" flags="ng" index="CsOGg">
         <property id="1324493929251207265" name="value" index="2j7hn" />
       </concept>
       <concept id="6230507547145830023" name="ChoiceLanguage.structure.Choice" flags="ng" index="CsOGt">
+        <property id="6230507547145831063" name="dimension" index="CsVsd" />
         <child id="6230507547145831055" name="alt2" index="CsVsl" />
         <child id="6230507547145831045" name="alt1" index="CsVsv" />
       </concept>
@@ -87,33 +92,35 @@
             <property role="TrG5h" value="sum" />
             <node concept="10Oyi0" id="19xz3oga$oP" role="1tU5fm" />
             <node concept="3cpWs3" id="19xz3ogaWx8" role="33vP2m">
-              <node concept="CsOGt" id="19xz3ogaY3s" role="3uHU7w">
-                <node concept="CsOGt" id="19xz3ogbGUs" role="CsVsl">
-                  <node concept="CsOGg" id="19xz3ogbGUW" role="CsVsv">
-                    <property role="2j7hn" value="5" />
-                  </node>
-                  <node concept="CsOGg" id="19xz3ogbGV0" role="CsVsl">
-                    <property role="2j7hn" value="6" />
-                  </node>
-                </node>
-                <node concept="CsOGt" id="19xz3ogbvm0" role="CsVsv">
-                  <node concept="CsOGg" id="19xz3ogbww9" role="CsVsv">
-                    <property role="2j7hn" value="10" />
-                  </node>
-                  <node concept="CsOGg" id="19xz3ogbBMX" role="CsVsl">
-                    <property role="2j7hn" value="4" />
-                  </node>
-                </node>
-              </node>
               <node concept="3cmrfG" id="19xz3oga$pP" role="3uHU7B">
                 <property role="3cmrfH" value="3" />
+              </node>
+              <node concept="CsOGt" id="19xz3ogbPDw" role="3uHU7w">
+                <property role="CsVsd" value="A" />
+                <property role="TrG5h" value="A" />
+                <node concept="CsOGt" id="19xz3ogbPFh" role="CsVsv">
+                  <property role="CsVsd" value="B" />
+                  <property role="TrG5h" value="B" />
+                  <node concept="CsOGg" id="19xz3ogbPGC" role="CsVsv">
+                    <property role="2j7hn" value="4" />
+                  </node>
+                  <node concept="CsOGg" id="19xz3ogbPGF" role="CsVsl">
+                    <property role="2j7hn" value="5" />
+                  </node>
+                </node>
+                <node concept="CsOGg" id="19xz3ogbPGI" role="CsVsl">
+                  <property role="2j7hn" value="6" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="19xz3ogbJTQ" role="3cqZAp" />
-        <node concept="3clFbH" id="19xz3ogbJUs" role="3cqZAp" />
-        <node concept="3clFbH" id="19xz3ogbISo" role="3cqZAp" />
+        <node concept="3clFbH" id="19xz3ogbSKz" role="3cqZAp" />
+        <node concept="2jDkC" id="19xz3ogbXjV" role="3cqZAp">
+          <property role="2jyXW" value="A" />
+          <property role="2jyXU" value="left" />
+        </node>
+        <node concept="3clFbH" id="19xz3ogbXj0" role="3cqZAp" />
         <node concept="3cpWs8" id="19xz3ogbIT7" role="3cqZAp">
           <node concept="3cpWsn" id="19xz3ogbITa" role="3cpWs9">
             <property role="TrG5h" value="v1" />
@@ -148,7 +155,11 @@
             <node concept="10Oyi0" id="19xz3ogbJDf" role="1tU5fm" />
             <node concept="3cpWs3" id="19xz3ogbJPw" role="33vP2m">
               <node concept="CsOGt" id="19xz3ogbJQi" role="3uHU7w">
+                <property role="CsVsd" value="D" />
+                <property role="TrG5h" value="C" />
                 <node concept="CsOGt" id="19xz3ogbJQO" role="CsVsv">
+                  <property role="CsVsd" value="E" />
+                  <property role="TrG5h" value="D" />
                   <node concept="CsOGg" id="19xz3ogbJRm" role="CsVsv">
                     <property role="2j7hn" value="v1" />
                   </node>
