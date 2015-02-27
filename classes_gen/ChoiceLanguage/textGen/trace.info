@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <root nodeRef="r:1951a6bf-2afb-4cc7-b6a1-7096adac2d21(ChoiceLanguage.textGen)/1324493929251104169">
+    <file name="Choice_TextGen.java">
+      <node id="1324493929251104169" at="9,0,11,0" concept="2" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="1324493929251104169" at="9,42,9,42" />
+      <scope id="1324493929251104169" at="9,0,11,0">
+        <var name="node" id="1324493929251104169" />
+      </scope>
+      <unit id="1324493929251104169" at="8,0,12,0" name="ChoiceLanguage.textGen.Choice_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:1951a6bf-2afb-4cc7-b6a1-7096adac2d21(ChoiceLanguage.textGen)/1324493929251249335">
+    <file name="Constant_TextGen.java">
+      <node id="1324493929251249601" at="11,42,12,188" concept="0" />
+      <node id="1324493929251249601" at="11,42,12,188" concept="1" />
+      <node id="1324493929251249335" at="11,0,14,0" concept="2" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="1324493929251249335" at="11,42,12,188" />
+      <scope id="1324493929251249601" at="11,42,12,188" />
+      <scope id="1324493929251249335" at="11,0,14,0">
+        <var name="node" id="1324493929251249335" />
+      </scope>
+      <unit id="1324493929251249335" at="10,0,15,0" name="ChoiceLanguage.textGen.Constant_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:1951a6bf-2afb-4cc7-b6a1-7096adac2d21(ChoiceLanguage.textGen)/1324493929251281370">
+    <file name="Alternative_TextGen.java">
+      <node id="1324493929251281391" at="11,42,12,180" concept="0" />
+      <node id="1324493929251281391" at="11,42,12,180" concept="0" />
+      <node id="1324493929251281391" at="11,42,12,180" concept="1" />
+      <node id="1324493929251281370" at="11,0,14,0" concept="2" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="1324493929251281370" at="11,42,12,180" />
+      <scope id="1324493929251281391" at="11,42,12,180" />
+      <scope id="1324493929251281370" at="11,0,14,0">
+        <var name="node" id="1324493929251281370" />
+      </scope>
+      <unit id="1324493929251281370" at="10,0,15,0" name="ChoiceLanguage.textGen.Alternative_TextGen" />
+    </file>
+  </root>
+</debug-info>
+
