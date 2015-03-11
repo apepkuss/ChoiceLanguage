@@ -50,6 +50,10 @@
     <property role="TrG5h" value="Choice" />
     <property role="34LRSv" value="choice" />
     <ref role="1TJDcQ" node="5pRdpDY17Tb" resolve="Variational" />
+    <node concept="1TJgyi" id="5pP1BG5riyh" role="1TKVEl">
+      <property role="TrG5h" value="dim" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="5pRdpDY18a5" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="alt1" />
@@ -65,10 +69,14 @@
     <node concept="PrWs8" id="19xz3ogbXlK" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="5pP1BG5pMAg" role="1TKVEl">
+      <property role="TrG5h" value="which" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5pRdpDY17Ua">
-    <property role="TrG5h" value="Constant" />
-    <property role="34LRSv" value="constant" />
+    <property role="TrG5h" value="One" />
+    <property role="34LRSv" value="one" />
     <ref role="1TJDcQ" node="5pRdpDY17Tb" resolve="Variational" />
     <node concept="1TJgyi" id="19xz3ogbvxx" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -79,13 +87,21 @@
     <property role="TrG5h" value="Select" />
     <property role="34LRSv" value="select" />
     <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
-    <node concept="1TJgyi" id="19xz3ogbUda" role="1TKVEl">
-      <property role="TrG5h" value="DimName" />
+    <node concept="1TJgyi" id="19xz3ogbUdc" role="1TKVEl">
+      <property role="TrG5h" value="whichAlt" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="19xz3ogbUdc" role="1TKVEl">
-      <property role="TrG5h" value="WhichAlt" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="1TJgyj" id="5pP1BG5qXkK" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="expression" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6Bd6_0eZq59" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="choice" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5pRdpDY17U7" resolve="Choice" />
     </node>
   </node>
   <node concept="1TIwiD" id="19xz3ogbL_p">
@@ -96,6 +112,24 @@
       <property role="20kJfa" value="value" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="5pRdpDY17Tb" resolve="Variational" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5pP1BG5qXm3">
+    <property role="TrG5h" value="ChoiceReference" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="5pP1BG5qXmj" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="choice" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="5pRdpDY17U7" resolve="Choice" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1efTNqYXVZx">
+    <property role="TrG5h" value="Dimension" />
+    <property role="34LRSv" value="dim" />
+    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <node concept="PrWs8" id="1efTNqYXXC$" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

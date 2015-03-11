@@ -19,8 +19,12 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
       case 1:
         return Collections.<ConceptEditor>singletonList(new Choice_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new Constant_Editor());
+        return Collections.<ConceptEditor>singletonList(new ChoiceReference_Editor());
       case 3:
+        return Collections.<ConceptEditor>singletonList(new Dimension_Editor());
+      case 4:
+        return Collections.<ConceptEditor>singletonList(new One_Editor());
+      case 5:
         return Collections.<ConceptEditor>singletonList(new Select_Editor());
       default:
     }
@@ -31,5 +35,5 @@ public class EditorAspectDescriptorImpl implements EditorAspectDescriptor {
   }
 
 
-  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"ChoiceLanguage.structure.Alternative", "ChoiceLanguage.structure.Choice", "ChoiceLanguage.structure.Constant", "ChoiceLanguage.structure.Select"};
+  private static String[] stringSwitchCases_xbvbvu_a0a0b = new String[]{"ChoiceLanguage.structure.Alternative", "ChoiceLanguage.structure.Choice", "ChoiceLanguage.structure.ChoiceReference", "ChoiceLanguage.structure.Dimension", "ChoiceLanguage.structure.One", "ChoiceLanguage.structure.Select"};
 }

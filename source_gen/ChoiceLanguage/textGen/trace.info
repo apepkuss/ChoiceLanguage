@@ -2,10 +2,15 @@
 <debug-info>
   <concept fqn="jetbrains.mps.baseLanguage.structure.BlockStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.IfStatement" />
   <concept fqn="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.TryCatchStatement" />
   <root nodeRef="r:1951a6bf-2afb-4cc7-b6a1-7096adac2d21(ChoiceLanguage.textGen)/1324493929251104169">
     <file name="Choice_TextGen.java">
-      <node id="1324493929251104169" at="9,0,11,0" concept="2" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1324493929251104169" at="9,0,11,0" concept="3" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="1324493929251104169" at="9,42,9,42" />
       <scope id="1324493929251104169" at="9,0,11,0">
         <var name="node" id="1324493929251104169" />
@@ -14,16 +19,16 @@
     </file>
   </root>
   <root nodeRef="r:1951a6bf-2afb-4cc7-b6a1-7096adac2d21(ChoiceLanguage.textGen)/1324493929251249335">
-    <file name="Constant_TextGen.java">
+    <file name="One_TextGen.java">
       <node id="1324493929251249601" at="11,42,12,188" concept="0" />
       <node id="1324493929251249601" at="11,42,12,188" concept="1" />
-      <node id="1324493929251249335" at="11,0,14,0" concept="2" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1324493929251249335" at="11,0,14,0" concept="3" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="1324493929251249335" at="11,42,12,188" />
       <scope id="1324493929251249601" at="11,42,12,188" />
       <scope id="1324493929251249335" at="11,0,14,0">
         <var name="node" id="1324493929251249335" />
       </scope>
-      <unit id="1324493929251249335" at="10,0,15,0" name="ChoiceLanguage.textGen.Constant_TextGen" />
+      <unit id="1324493929251249335" at="10,0,15,0" name="ChoiceLanguage.textGen.One_TextGen" />
     </file>
   </root>
   <root nodeRef="r:1951a6bf-2afb-4cc7-b6a1-7096adac2d21(ChoiceLanguage.textGen)/1324493929251281370">
@@ -31,13 +36,96 @@
       <node id="1324493929251281391" at="11,42,12,180" concept="0" />
       <node id="1324493929251281391" at="11,42,12,180" concept="0" />
       <node id="1324493929251281391" at="11,42,12,180" concept="1" />
-      <node id="1324493929251281370" at="11,0,14,0" concept="2" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="1324493929251281370" at="11,0,14,0" concept="3" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <scope id="1324493929251281370" at="11,42,12,180" />
       <scope id="1324493929251281391" at="11,42,12,180" />
       <scope id="1324493929251281370" at="11,0,14,0">
         <var name="node" id="1324493929251281370" />
       </scope>
       <unit id="1324493929251281370" at="10,0,15,0" name="ChoiceLanguage.textGen.Alternative_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:1951a6bf-2afb-4cc7-b6a1-7096adac2d21(ChoiceLanguage.textGen)/6229892784978679440">
+    <file name="ChoiceReference_TextGen.java">
+      <node id="6229892784978679440" at="9,0,11,0" concept="3" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="6229892784978679440" at="9,42,9,42" />
+      <scope id="6229892784978679440" at="9,0,11,0">
+        <var name="node" id="6229892784978679440" />
+      </scope>
+      <unit id="6229892784978679440" at="8,0,12,0" name="ChoiceLanguage.textGen.ChoiceReference_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:1951a6bf-2afb-4cc7-b6a1-7096adac2d21(ChoiceLanguage.textGen)/7623778675359450445">
+    <file name="Select_TextGen.java">
+      <node id="7623778675359450445" at="19,44,20,61" concept="1" />
+      <node id="7623778675359707859" at="23,492,24,28" concept="1" />
+      <node id="7623778675359707610" at="24,28,25,44" concept="0" />
+      <node id="7623778675359707610" at="24,28,25,44" concept="1" />
+      <node id="7623778675359520509" at="26,496,27,341" concept="0" />
+      <node id="7623778675359520509" at="26,496,27,341" concept="1" />
+      <node id="7623778675359520509" at="27,341,28,25" concept="1" />
+      <node id="7623778675359635015" at="28,25,29,32" concept="0" />
+      <node id="7623778675359635015" at="28,25,29,32" concept="1" />
+      <node id="7623778675359708372" at="30,14,31,28" concept="1" />
+      <node id="7623778675359708403" at="31,28,32,42" concept="0" />
+      <node id="7623778675359708403" at="31,28,32,42" concept="1" />
+      <node id="7623778675359552127" at="34,382,35,339" concept="0" />
+      <node id="7623778675359552127" at="34,382,35,339" concept="1" />
+      <node id="7623778675359552127" at="35,339,36,23" concept="1" />
+      <node id="7623778675359669158" at="36,23,37,31" concept="0" />
+      <node id="7623778675359669158" at="36,23,37,31" concept="1" />
+      <node id="7623778675359555362" at="38,12,39,31" concept="0" />
+      <node id="7623778675359555362" at="38,12,39,31" concept="1" />
+      <node id="7623778675359599104" at="40,5,41,0" concept="5" />
+      <node id="7623778675359450445" at="43,7,44,38" concept="4" />
+      <node id="7623778675359450445" at="45,13,46,335" concept="1" />
+      <node id="7623778675359450445" at="48,46,49,88" concept="1" />
+      <node id="7623778675359450445" at="51,9,52,80" concept="1" />
+      <node id="7623778675359450445" at="56,0,57,0" concept="6" trace="LOG" />
+      <node id="7623778675359520509" at="26,496,28,25" concept="0" />
+      <node id="7623778675359552127" at="34,382,36,23" concept="0" />
+      <node id="7623778675359555116" at="38,10,40,5" concept="0" />
+      <node id="7623778675359450445" at="18,42,21,5" concept="2" />
+      <node id="7623778675359707884" at="30,12,33,7" concept="0" />
+      <node id="7623778675359450445" at="47,31,50,11" concept="0" />
+      <node id="7623778675359450445" at="47,31,50,11" concept="2" />
+      <node id="7623778675359450445" at="44,38,51,9" concept="7" />
+      <node id="7623778675359683244" at="22,373,33,7" concept="2" />
+      <node id="7623778675359450445" at="42,44,53,7" concept="0" />
+      <node id="7623778675359450445" at="41,0,54,5" concept="2" />
+      <node id="7623778675359511317" at="21,5,40,5" concept="2" />
+      <node id="7623778675359450445" at="18,0,56,0" concept="3" trace="doGenerateText#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="7623778675359450445" at="19,44,20,61" />
+      <scope id="7623778675359707610" at="24,28,25,44" />
+      <scope id="7623778675359520509" at="26,496,27,341" />
+      <scope id="7623778675359635015" at="28,25,29,32" />
+      <scope id="7623778675359708403" at="31,28,32,42" />
+      <scope id="7623778675359552127" at="34,382,35,339" />
+      <scope id="7623778675359669158" at="36,23,37,31" />
+      <scope id="7623778675359555117" at="38,12,39,31" />
+      <scope id="7623778675359555362" at="38,12,39,31" />
+      <scope id="7623778675359450445" at="45,13,46,335" />
+      <scope id="7623778675359450445" at="48,46,49,88" />
+      <scope id="7623778675359683246" at="23,492,25,44" />
+      <scope id="7623778675359520509" at="26,496,28,25" />
+      <scope id="7623778675359707885" at="30,14,32,42" />
+      <scope id="7623778675359552127" at="34,382,36,23" />
+      <scope id="7623778675359690253" at="26,496,29,32" />
+      <scope id="7623778675359552126" at="34,382,37,31" />
+      <scope id="7623778675359450445" at="47,0,50,11">
+        <var name="t" id="7623778675359450445" />
+      </scope>
+      <scope id="7623778675359450445" at="47,31,50,11" />
+      <scope id="7623778675359450445" at="43,7,52,80">
+        <var name="traceableProperty" id="7623778675359450445" />
+      </scope>
+      <scope id="7623778675359511318" at="22,373,33,7" />
+      <scope id="7623778675359450445" at="42,44,53,7" />
+      <scope id="7623778675359450445" at="18,42,54,5" />
+      <scope id="7623778675359450445" at="18,0,56,0">
+        <var name="node" id="7623778675359450445" />
+      </scope>
+      <unit id="7623778675359450445" at="17,0,58,0" name="ChoiceLanguage.textGen.Select_TextGen" />
     </file>
   </root>
 </debug-info>

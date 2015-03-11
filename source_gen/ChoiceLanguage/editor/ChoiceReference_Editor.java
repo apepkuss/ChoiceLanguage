@@ -7,43 +7,35 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.nodeEditor.cells.EditorCell_Collection;
-import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.nodeEditor.cellProviders.CellProviderWithRole;
 import jetbrains.mps.lang.editor.cellProviders.RefCellCellProvider;
 import jetbrains.mps.nodeEditor.EditorManager;
 import jetbrains.mps.nodeEditor.InlineCellProvider;
 import jetbrains.mps.lang.editor.cellProviders.PropertyCellProvider;
+import jetbrains.mps.nodeEditor.cells.EditorCell_Constant;
 import jetbrains.mps.openapi.editor.style.Style;
 import jetbrains.mps.editor.runtime.style.StyleImpl;
 import jetbrains.mps.editor.runtime.style.StyleAttributes;
 
-public class Select_Editor extends DefaultNodeEditor {
+public class ChoiceReference_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return this.createCollection_2tw2dk_a(editorContext, node);
+    return this.createCollection_bisz1t_a(editorContext, node);
   }
-  private EditorCell createCollection_2tw2dk_a(EditorContext editorContext, SNode node) {
+  private EditorCell createCollection_bisz1t_a(EditorContext editorContext, SNode node) {
     EditorCell_Collection editorCell = EditorCell_Collection.createIndent2(editorContext, node);
-    editorCell.setCellId("Collection_2tw2dk_a");
+    editorCell.setCellId("Collection_bisz1t_a");
     editorCell.setBig(true);
-    editorCell.addEditorCell(this.createConstant_2tw2dk_a0(editorContext, node));
-    editorCell.addEditorCell(this.createRefCell_2tw2dk_b0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2tw2dk_c0(editorContext, node));
-    editorCell.addEditorCell(this.createProperty_2tw2dk_d0(editorContext, node));
-    editorCell.addEditorCell(this.createConstant_2tw2dk_e0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_bisz1t_a0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_bisz1t_b0(editorContext, node));
+    editorCell.addEditorCell(this.createRefCell_bisz1t_c0(editorContext, node));
     return editorCell;
   }
-  private EditorCell createConstant_2tw2dk_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "select");
-    editorCell.setCellId("Constant_2tw2dk_a0");
-    editorCell.setDefaultText("");
-    return editorCell;
-  }
-  private EditorCell createRefCell_2tw2dk_b0(EditorContext editorContext, SNode node) {
+  private EditorCell createRefCell_bisz1t_a0(EditorContext editorContext, SNode node) {
     CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
     provider.setRole("choice");
     provider.setNoTargetText("<no choice>");
     EditorCell editorCell;
-    provider.setAuxiliaryCellProvider(new Select_Editor._Inline_2tw2dk_a1a());
+    provider.setAuxiliaryCellProvider(new ChoiceReference_Editor._Inline_bisz1t_a0a());
     editorCell = provider.createEditorCell(editorContext);
     if (editorCell.getRole() == null) {
       editorCell.setReferenceCell(true);
@@ -58,17 +50,17 @@ public class Select_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  public static class _Inline_2tw2dk_a1a extends InlineCellProvider {
-    public _Inline_2tw2dk_a1a() {
+  public static class _Inline_bisz1t_a0a extends InlineCellProvider {
+    public _Inline_bisz1t_a0a() {
       super();
     }
     public EditorCell createEditorCell(EditorContext editorContext) {
       return this.createEditorCell(editorContext, this.getSNode());
     }
     public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-      return this.createProperty_2tw2dk_a0b0(editorContext, node);
+      return this.createProperty_bisz1t_a0a0(editorContext, node);
     }
-    private EditorCell createProperty_2tw2dk_a0b0(EditorContext editorContext, SNode node) {
+    private EditorCell createProperty_bisz1t_a0a0(EditorContext editorContext, SNode node) {
       CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
       provider.setRole("name");
       provider.setNoTargetText("<no name>");
@@ -86,9 +78,9 @@ public class Select_Editor extends DefaultNodeEditor {
       return editorCell;
     }
   }
-  private EditorCell createConstant_2tw2dk_c0(EditorContext editorContext, SNode node) {
+  private EditorCell createConstant_bisz1t_b0(EditorContext editorContext, SNode node) {
     EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ".");
-    editorCell.setCellId("Constant_2tw2dk_c0");
+    editorCell.setCellId("Constant_bisz1t_b0");
     Style style = new StyleImpl();
     style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
     style.set(StyleAttributes.PUNCTUATION_RIGHT, 0, true);
@@ -96,13 +88,17 @@ public class Select_Editor extends DefaultNodeEditor {
     editorCell.setDefaultText("");
     return editorCell;
   }
-  private EditorCell createProperty_2tw2dk_d0(EditorContext editorContext, SNode node) {
-    CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
-    provider.setRole("whichAlt");
-    provider.setNoTargetText("<no whichAlt>");
+  private EditorCell createRefCell_bisz1t_c0(EditorContext editorContext, SNode node) {
+    CellProviderWithRole provider = new RefCellCellProvider(node, editorContext);
+    provider.setRole("choice");
+    provider.setNoTargetText("<no choice>");
     EditorCell editorCell;
+    provider.setAuxiliaryCellProvider(new ChoiceReference_Editor._Inline_bisz1t_a2a());
     editorCell = provider.createEditorCell(editorContext);
-    editorCell.setCellId("property_whichAlt");
+    if (editorCell.getRole() == null) {
+      editorCell.setReferenceCell(true);
+      editorCell.setRole("choice");
+    }
     editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
     SNode attributeConcept = provider.getRoleAttribute();
     Class attributeKind = provider.getRoleAttributeClass();
@@ -112,13 +108,32 @@ public class Select_Editor extends DefaultNodeEditor {
     } else
     return editorCell;
   }
-  private EditorCell createConstant_2tw2dk_e0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ";");
-    editorCell.setCellId("Constant_2tw2dk_e0");
-    Style style = new StyleImpl();
-    style.set(StyleAttributes.PUNCTUATION_LEFT, 0, true);
-    editorCell.getStyle().putAll(style);
-    editorCell.setDefaultText("");
-    return editorCell;
+  public static class _Inline_bisz1t_a2a extends InlineCellProvider {
+    public _Inline_bisz1t_a2a() {
+      super();
+    }
+    public EditorCell createEditorCell(EditorContext editorContext) {
+      return this.createEditorCell(editorContext, this.getSNode());
+    }
+    public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
+      return this.createProperty_bisz1t_a0c0(editorContext, node);
+    }
+    private EditorCell createProperty_bisz1t_a0c0(EditorContext editorContext, SNode node) {
+      CellProviderWithRole provider = new PropertyCellProvider(node, editorContext);
+      provider.setRole("which");
+      provider.setNoTargetText("<no which>");
+      provider.setReadOnly(true);
+      EditorCell editorCell;
+      editorCell = provider.createEditorCell(editorContext);
+      editorCell.setCellId("property_which");
+      editorCell.setSubstituteInfo(provider.createDefaultSubstituteInfo());
+      SNode attributeConcept = provider.getRoleAttribute();
+      Class attributeKind = provider.getRoleAttributeClass();
+      if (attributeConcept != null) {
+        EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
+        return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
+      } else
+      return editorCell;
+    }
   }
 }
