@@ -32,7 +32,6 @@
     <classNode extendsClassName="jetbrains.mps.textGen.SNodeTextGen" />
   </dependency>
   <dependency className="ChoiceLanguage.textGen.Select_TextGen" file="Select_TextGen.java">
-    <classNode dependClassName="ChoiceLanguage.behavior.Select_Behavior" />
     <classNode dependClassName="java.lang.Object" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="java.lang.Throwable" />

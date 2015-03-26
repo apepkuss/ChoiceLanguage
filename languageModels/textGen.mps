@@ -8,7 +8,6 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="e2lb" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang(JDK/java.lang@java_stub)" implicit="true" />
-    <import index="nfrz" ref="r:83004409-9dfb-4541-aedf-22cec616e819(ChoiceLanguage.behavior)" implicit="true" />
     <import index="4468" ref="r:a403320e-50ad-4dec-bb01-43318f5f84f3(ChoiceLanguage.structure)" implicit="true" />
   </imports>
   <registry>
@@ -28,9 +27,6 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
-      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
-        <child id="1068580123156" name="expression" index="3clFbG" />
-      </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
@@ -80,7 +76,6 @@
       <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -286,14 +281,6 @@
     <ref role="WuzLi" to="4468:19xz3ogbL$u" resolve="Select" />
     <node concept="11bSqf" id="6Bd6_0eZSle" role="11c4hB">
       <node concept="3clFbS" id="6Bd6_0eZSlf" role="2VODD2">
-        <node concept="3clFbF" id="70TtSo$Hk3k" role="3cqZAp">
-          <node concept="2OqwBi" id="70TtSo$Hqkh" role="3clFbG">
-            <node concept="117lpO" id="70TtSo$HqhG" role="2Oq$k0" />
-            <node concept="2qgKlT" id="70TtSo$Hrp0" role="2OqNvi">
-              <ref role="37wK5l" to="nfrz:70TtSo$HhG1" resolve="test" />
-            </node>
-          </node>
-        </node>
         <node concept="lc7rE" id="6OnOWv$8drC" role="3cqZAp">
           <node concept="l9hG8" id="6OnOWv$8duo" role="lcghm">
             <node concept="2OqwBi" id="6OnOWv$8dyM" role="lb14g">
