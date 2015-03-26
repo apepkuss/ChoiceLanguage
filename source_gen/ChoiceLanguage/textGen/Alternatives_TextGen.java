@@ -5,7 +5,7 @@ package ChoiceLanguage.textGen;
 import jetbrains.mps.textGen.SNodeTextGen;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class ChoiceReference_TextGen extends SNodeTextGen {
+public class Alternatives_TextGen extends SNodeTextGen {
   public void doGenerateText(SNode node) {
   }
 }

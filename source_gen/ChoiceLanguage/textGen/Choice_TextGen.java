@@ -4,8 +4,25 @@ package ChoiceLanguage.textGen;
 
 import jetbrains.mps.textGen.SNodeTextGen;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class Choice_TextGen extends SNodeTextGen {
   public void doGenerateText(SNode node) {
+    this.append(SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e87L, 0x3f9ef86f71684e43L, "dim")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
+    this.appendNewLine();
+    this.append(SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e87L, 0x3f9ef86f71684e43L, "dim")), MetaAdapterFactory.getProperty(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x138fe736bef7bfe1L, 0x3f9ef86f71684e82L, "state")));
+    this.appendNewLine();
+
+    if (SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e87L, 0x3f9ef86f71684e43L, "dim")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) == "A") {
+      this.append("\"A\"");
+    } else if (SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e87L, 0x3f9ef86f71684e43L, "dim")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")) == "B") {
+      this.append("\"B\"");
+    } else {
+      this.append("\"neither A nor B\"");
+    }
+
+    // <node> 
   }
 }

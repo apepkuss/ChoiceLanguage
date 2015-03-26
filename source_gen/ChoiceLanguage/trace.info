@@ -2,7 +2,8 @@
 <debug-info>
   <root>
     <file name="Language.java">
-      <unit at="18,0,57,0" name="ChoiceLanguage.Language" />
+      <unit at="49,21,49,56" name="ChoiceLanguage.Language$1" />
+      <unit at="21,0,66,0" name="ChoiceLanguage.Language" />
     </file>
   </root>
 </debug-info>

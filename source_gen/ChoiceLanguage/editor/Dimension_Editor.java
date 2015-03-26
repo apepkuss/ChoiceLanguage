@@ -22,10 +22,11 @@ public class Dimension_Editor extends DefaultNodeEditor {
     editorCell.setBig(true);
     editorCell.addEditorCell(this.createConstant_gk593n_a0(editorContext, node));
     editorCell.addEditorCell(this.createProperty_gk593n_b0(editorContext, node));
+    editorCell.addEditorCell(this.createConstant_gk593n_c0(editorContext, node));
     return editorCell;
   }
   private EditorCell createConstant_gk593n_a0(EditorContext editorContext, SNode node) {
-    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "dimension");
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, "Dim");
     editorCell.setCellId("Constant_gk593n_a0");
     editorCell.setDefaultText("");
     return editorCell;
@@ -44,6 +45,12 @@ public class Dimension_Editor extends DefaultNodeEditor {
       EditorManager manager = EditorManager.getInstanceFromContext(editorContext);
       return manager.createNodeRoleAttributeCell(editorContext, attributeConcept, attributeKind, editorCell);
     } else
+    return editorCell;
+  }
+  private EditorCell createConstant_gk593n_c0(EditorContext editorContext, SNode node) {
+    EditorCell_Constant editorCell = new EditorCell_Constant(editorContext, node, ";");
+    editorCell.setCellId("Constant_gk593n_c0");
+    editorCell.setDefaultText("");
     return editorCell;
   }
 }

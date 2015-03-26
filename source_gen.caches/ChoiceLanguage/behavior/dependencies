@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dependenciesRoot>
-  <dependency className="ChoiceLanguage.behavior.Alternative_BehaviorDescriptor" file="Alternative_BehaviorDescriptor.java">
-    <classNode dependClassName="ChoiceLanguage.behavior.Variational_BehaviorDescriptor" />
+  <dependency className="ChoiceLanguage.behavior.Alternatives_BehaviorDescriptor" file="Alternatives_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
+    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
+    <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="ChoiceLanguage.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
-    <classNode dependClassName="ChoiceLanguage.behavior.Alternative_BehaviorDescriptor" />
-    <classNode dependClassName="ChoiceLanguage.behavior.ChoiceReference_BehaviorDescriptor" />
+    <classNode dependClassName="ChoiceLanguage.behavior.Alternatives_BehaviorDescriptor" />
     <classNode dependClassName="ChoiceLanguage.behavior.Choice_BehaviorDescriptor" />
     <classNode dependClassName="ChoiceLanguage.behavior.Dimension_BehaviorDescriptor" />
     <classNode dependClassName="ChoiceLanguage.behavior.One_BehaviorDescriptor" />
@@ -19,12 +22,6 @@
     <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
   </dependency>
-  <dependency className="ChoiceLanguage.behavior.ChoiceReference_BehaviorDescriptor" file="ChoiceReference_BehaviorDescriptor.java">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.baseLanguage.behavior.Expression_BehaviorDescriptor" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
-  </dependency>
   <dependency className="ChoiceLanguage.behavior.Choice_BehaviorDescriptor" file="Choice_BehaviorDescriptor.java">
     <classNode dependClassName="ChoiceLanguage.behavior.Variational_BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Override" />
@@ -34,6 +31,11 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="ChoiceLanguage.behavior.Dimension_Behavior" file="Dimension_Behavior.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="ChoiceLanguage.behavior.Dimension_BehaviorDescriptor" file="Dimension_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
@@ -50,6 +52,12 @@
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
+  </dependency>
+  <dependency className="ChoiceLanguage.behavior.Select_Behavior" file="Select_Behavior.java">
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
+    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
+    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
   </dependency>
   <dependency className="ChoiceLanguage.behavior.Select_BehaviorDescriptor" file="Select_BehaviorDescriptor.java">
     <classNode dependClassName="java.lang.Override" />
