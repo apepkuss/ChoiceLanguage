@@ -5,11 +5,9 @@ package ChoiceLanguage.textGen;
 import jetbrains.mps.textGen.SNodeTextGen;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.textGen.TraceInfoGenerationUtil;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
 import jetbrains.mps.smodel.behaviour.BehaviorReflection;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
@@ -19,17 +17,14 @@ public class Select_TextGen extends SNodeTextGen {
     if (getBuffer().hasPositionsSupport()) {
       TraceInfoGenerationUtil.createPositionInfo(this, node);
     }
-    this.append(SPropertyOperations.getString(node, MetaAdapterFactory.getProperty(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x12618c36102f191eL, 0x12618c36102fa34cL, "whichAlt")));
-    this.appendNewLine();
+    // <node> 
 
-    this.append("\"in select textgen\"");
-    this.appendNewLine();
+    // <node> 
 
-    this.append(SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x12618c36102f191eL, 0x69cd1a500efda149L, "dim")), MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name")));
-    this.appendNewLine();
+    // <node> 
 
-    this.append(SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x12618c36102f191eL, 0x69cd1a500efda149L, "dim")), MetaAdapterFactory.getProperty(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x138fe736bef7bfe1L, 0x3f9ef86f71684e82L, "state")));
-    this.appendNewLine();
+    // <node> 
+
     if (getBuffer().hasPositionsSupport()) {
       {
         String traceableProperty = "";
