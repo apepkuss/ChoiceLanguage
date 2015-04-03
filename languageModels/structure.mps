@@ -17,7 +17,6 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -110,28 +109,9 @@
     <node concept="PrWs8" id="1efTNqYXXC$" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="PrWs8" id="3yPsFV4A$5f" role="PzmwI">
-      <ref role="PrY4T" node="3yPsFV4_MJz" resolve="IState" />
-    </node>
-  </node>
-  <node concept="PlHQZ" id="3yPsFV4_MJz">
-    <property role="TrG5h" value="IState" />
-    <node concept="1TJgyi" id="3yPsFV4_MJ$" role="1TKVEl">
+    <node concept="1TJgyi" id="7ZTtPuR8YRJ" role="1TKVEl">
       <property role="TrG5h" value="state" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3yPsFV4Cr1o">
-    <property role="TrG5h" value="State" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3yPsFV4Cr1p" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="3yPsFV4CRaq" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="dim" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1efTNqYXVZx" resolve="Dimension" />
     </node>
   </node>
 </model>

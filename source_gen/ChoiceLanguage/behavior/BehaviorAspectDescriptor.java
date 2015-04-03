@@ -21,11 +21,9 @@ public class BehaviorAspectDescriptor implements jetbrains.mps.smodel.runtime.Be
         return new Alternatives_BehaviorDescriptor();
       case 2:
         return new Dimension_BehaviorDescriptor();
-      case 5:
-        return new State_BehaviorDescriptor();
       default:
         return BehaviorAspectInterpreted.getInstance().getDescriptor(fqName);
     }
   }
-  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"ChoiceLanguage.structure.Alternatives", "ChoiceLanguage.structure.Choice", "ChoiceLanguage.structure.Dimension", "ChoiceLanguage.structure.One", "ChoiceLanguage.structure.Select", "ChoiceLanguage.structure.State"};
+  private static String[] stringSwitchCases_846f5o_a0a0b = new String[]{"ChoiceLanguage.structure.Alternatives", "ChoiceLanguage.structure.Choice", "ChoiceLanguage.structure.Dimension", "ChoiceLanguage.structure.One", "ChoiceLanguage.structure.Select"};
 }

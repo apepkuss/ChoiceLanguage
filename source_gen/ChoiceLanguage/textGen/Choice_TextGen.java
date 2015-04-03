@@ -11,10 +11,10 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 public class Choice_TextGen extends SNodeTextGen {
   public void doGenerateText(SNode node) {
 
-    if (SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e87L, 0x3f9ef86f71684e43L, "dim")), MetaAdapterFactory.getProperty(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x38b572bec4972be3L, 0x38b572bec4972be4L, "state")).equalsIgnoreCase("left")) {
+    if (SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e87L, 0x3f9ef86f71684e43L, "dim")), MetaAdapterFactory.getProperty(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x138fe736bef7bfe1L, 0x7ff97757b723edefL, "state")).equalsIgnoreCase("left")) {
       // <node> 
       appendNode(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e87L, 0x5677359a7e048285L, "alt1")));
-    } else if (SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e87L, 0x3f9ef86f71684e43L, "dim")), MetaAdapterFactory.getProperty(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x38b572bec4972be3L, 0x38b572bec4972be4L, "state")).equalsIgnoreCase("right")) {
+    } else if (SPropertyOperations.getString(SLinkOperations.getTarget(node, MetaAdapterFactory.getReferenceLink(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e87L, 0x3f9ef86f71684e43L, "dim")), MetaAdapterFactory.getProperty(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x138fe736bef7bfe1L, 0x7ff97757b723edefL, "state")).equalsIgnoreCase("right")) {
       // <node> 
       appendNode(SLinkOperations.getTarget(node, MetaAdapterFactory.getContainmentLink(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x5677359a7e047e87L, 0x5677359a7e04828fL, "alt2")));
     } else {

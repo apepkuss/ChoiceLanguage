@@ -7,7 +7,7 @@ import jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.lang.core.behavior.INamedConcept_Behavior;
 
-public class Dimension_BehaviorDescriptor extends Statement_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor, IState_BehaviorDescriptor {
+public class Dimension_BehaviorDescriptor extends Statement_BehaviorDescriptor implements INamedConcept_BehaviorDescriptor {
   public Dimension_BehaviorDescriptor() {
   }
   public String virtual_getFqName_1213877404258(SNode thisNode) {

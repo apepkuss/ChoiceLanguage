@@ -8,6 +8,6 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class Dimension_Behavior {
   public static void init(SNode thisNode) {
-    SPropertyOperations.set(thisNode, MetaAdapterFactory.getProperty(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x38b572bec4972be3L, 0x38b572bec4972be4L, "state"), "left");
+    SPropertyOperations.set(thisNode, MetaAdapterFactory.getProperty(0xa92e5bf9eea84a4cL, 0x99848f946109148dL, 0x138fe736bef7bfe1L, 0x7ff97757b723edefL, "state"), "left");
   }
 }
