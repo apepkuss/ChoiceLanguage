@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info>
+  <concept fqn="jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="9,0,28,0" name="ChoiceLanguage.behavior.BehaviorAspectDescriptor" />
+    </file>
+    <file name="Choice_BehaviorDescriptor.java">
+      <unit at="9,0,20,0" name="ChoiceLanguage.behavior.Choice_BehaviorDescriptor" />
+    </file>
+    <file name="Dimension_BehaviorDescriptor.java">
+      <unit at="10,0,21,0" name="ChoiceLanguage.behavior.Dimension_BehaviorDescriptor" />
+    </file>
+    <file name="One_BehaviorDescriptor.java">
+      <unit at="6,0,14,0" name="ChoiceLanguage.behavior.One_BehaviorDescriptor" />
+    </file>
+    <file name="Select_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="ChoiceLanguage.behavior.Select_BehaviorDescriptor" />
+    </file>
+    <file name="Variational_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="ChoiceLanguage.behavior.Variational_BehaviorDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:83004409-9dfb-4541-aedf-22cec616e819(ChoiceLanguage.behavior)/4086298400575948065">
+    <file name="Dimension_Behavior.java">
+      <node id="4086298400576100208" at="10,43,11,171" concept="0" />
+      <node id="4086298400575948065" at="10,0,13,0" concept="1" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="4086298400575948067" at="10,43,11,171" />
+      <scope id="4086298400575948065" at="10,0,13,0">
+        <var name="thisNode" id="4086298400575948065" />
+      </scope>
+      <unit id="4086298400575948065" at="9,0,14,0" name="ChoiceLanguage.behavior.Dimension_Behavior" />
+    </file>
+  </root>
+  <root nodeRef="r:83004409-9dfb-4541-aedf-22cec616e819(ChoiceLanguage.behavior)/7860984530077496570">
+    <file name="Select_Behavior.java">
+      <node id="7860984530077714151" at="10,43,11,172" concept="0" />
+      <node id="7860984530077496570" at="13,0,15,0" concept="1" trace="call_test_8086626023945607937#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="7860984530077496570" at="10,0,13,0" concept="1" trace="init#(Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <scope id="8086626023945607940" at="13,68,13,68" />
+      <scope id="7860984530077496572" at="10,43,11,172" />
+      <scope id="7860984530077496570" at="13,0,15,0">
+        <var name="thisNode" id="7860984530077496570" />
+      </scope>
+      <scope id="7860984530077496570" at="10,0,13,0">
+        <var name="thisNode" id="7860984530077496570" />
+      </scope>
+      <unit id="7860984530077496570" at="9,0,16,0" name="ChoiceLanguage.behavior.Select_Behavior" />
+    </file>
+  </root>
+</debug-info>
+
